@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPath AI | Learning Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="./index.html" class="logo">DevPath AI</a>
+
+      <nav class="navigation">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#tasks">Tasks</a>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <main class="container" id="dashboard">
+      <!-- Welcome -->
+      <section class="welcome">
+        <h1>Your learning workspace</h1>
+        <p>Learn concepts, build projects, track progress.</p>
+      </section>
+      <!-- End of Welcome -->
+
+      <!-- Stats -->
+      <section class="stats" aria-label="learning-statistics">
+        <article class="stat-card">
+          <h2>Total lessons</h2>
+          <p id="lesson-count">0</p>
+        </article>
+        <article class="stat-card">
+          <h2>Completed tasks</h2>
+          <p id="completed-count">0</p>
+        </article>
+      </section>
+      <!-- End of Stats -->
+
+      <!-- Lessons -->
+      <section id="lessons" class="panel">
+        <h2>Learning roadmap</h2>
+        <div id="lesson-list" class="lesson-grid"></div>
+      </section>
+      <!-- End of Lessons -->
+
+      <!-- Tasks -->
+      <section id="tasks" class="panel">
+        <h2>Today's tasks</h2>
+
+        <form action="" id="task-form">
+          <label for="task-input">New task</label>
+          <div class="task-input-row">
+            <input
+              type="text"
+              name="task"
+              id="task-input"
+              placeholder="e.g. practice javascript array"
+              required />
+            <button type="submit">Add task</button>
+          </div>
+        </form>
+
+        <ul class="task-list" id="task-list"></ul>
+      </section>
+      <!-- End of Tasks -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>DevPath AI - Learn by building</p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- app -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
